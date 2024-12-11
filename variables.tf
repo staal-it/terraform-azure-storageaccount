@@ -13,3 +13,15 @@ variable "location" {
   type        = string
   default     = "westeurope"
 }
+
+variable "network_rules_default_action" {
+  description = "The default action for network rules"
+  type        = string
+  default     = "Deny"
+}
+
+variable "tags" {
+  description = "A mapping of tags to assign to the resource"
+  type        = map(string)
+  default     = {}
+}
